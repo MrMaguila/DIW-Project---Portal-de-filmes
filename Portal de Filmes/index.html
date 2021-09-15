@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" >
+    <title> Portal de Filmes </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="estilos.css">
+
+    <script src="https://kit.fontawesome.com/4a35a85f5c.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+    <header class="header">
+        
+        <div class="container">
+        <!-- Create the top menu -->
+            <div class="row w-100">
+                
+                <div class="col-12 header2">
+
+                    
+                    <div id="mainMenuId" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 menuArea">
+
+                        <nav class="nav menuNav">
+
+                            <img src="Assets/logo.png" class="menuLogo">
+
+                            <a class="flex-sm-fill text-sm-center nav-link" href="#carouselID"> Lançamentos </a>
+
+                            <a class="separator" href="#"> | </a>
+                            <a class="separator2" href="#"> _____________ </a>
+                    
+                            <a class="flex-sm-fill text-sm-center nav-link" href="#highlightedId"> Em Destaque </a>
+                        
+                            <a class="separator" href="#"> | </a>
+                            <a class="separator2" href="#"> _____________ </a>
+
+                            <a class="flex-sm-fill text-sm-center nav-link" href="#avaliationsId"> Avaliações </a>
+                    
+                            <a class="separator" href="#"> | </a>
+                            <a class="separator2" href="#"> _____________ </a>
+
+                            <a class="flex-sm-fill text-sm-center nav-link" href="#interviewsId"> Entrevistas & MakingOfs </a>
+
+                            <a class="separator" href="#"> | </a>
+                            <a class="separator2" href="#"> _____________ </a>
+                        
+                            <a class="flex-sm-fill text-sm-center nav-link" href="#newsId"> Novidades </a>
+                            
+                            
+                            <form id="searchFormId" class="form-inline SearchTab" action="searchPage.html" onsubmit="submitSearchKey2()">                                    
+                                <input id="searchInputId" class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Procurar Filmes"
+                                aria-label="Search">
+                                <a id="inputIconId" href="searchPage.html"> <i class="fas fa-search"></i> </a>
+                            </form>
+
+                        </nav>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <main class="container-fluid main">
+
+
+        <div class="row main2">
+            
+
+            <!--  Carousel -->
+
+           <div class="col-12"> 
+                <div id="carouselID" class="carousel slide" data-interval="false" data-ride="carousel">
+                    
+                    <div id="carouselContainerId" class="carousel-inner container">                                        
+
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselID" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselID" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+            <!-- Carousel End -->
+
+            <!-- Posters -->
+
+        <div id="highlightedId"class="row">
+
+            <div class="col-6 Highlighted">
+                <h1> Em Destaque </h1>
+            </div>
+
+            <div class="col-6 options">
+                <select id="postersCategoryId" class="custom-select">
+                    <option selected value="0">Categoria: Todos</option>
+                    <option value="1">Aventura</option>
+                    <option value="2">Romance</option>
+                    <option value="3">Comédia</option>
+                    <option value="4">Animation</option>
+                  </select>
+            </div>
+
+        </div>
+
+        <div id="postersId" class="row">
+
+
+        </div>
+
+        <div class="row loadButton">
+            <div class="col-12">
+                <button id="loadPostersButtonId" type="button" class="btn btn-secondary"> &#10010 Carregar mais filmes</button>
+            </div>
+            
+        </div>
+
+
+        <div class="row">
+            <div class="col-12 highlighted2">
+                <h1> Últimas Avaliações </h1>
+            </div>
+        </div>
+       
+        <div id="avaliationsId" class="row avaliations">
+
+
+        </div>
+
+
+        <div class="row loadButton">
+            <div class="col-12">
+                <button id="loadAvaliationsButtonId" type="button" class="btn btn-secondary"> &#10010 Carregar mais Avaliações</button>
+            </div>
+            
+        </div>
+
+
+        <div id="interviewsId" class="row interviews">
+
+            <div class="col-12 highlighted2">
+                <h1>Entrevistas & Making Of</h1>
+            </div>
+     
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 interview">
+                <iframe 
+                    class="d-block w-100"
+                    src="https://www.youtube.com/embed/9ysPMPciWwg" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    frameborder="0" allowfullscreen>
+                </iframe>           
+                <p>Filme: O Resgate</p>
+                <p>Diretor: Sam Hargrave</p>
+                <p>Roteiro: Joe Russo &nbsp Estreia: 24/04/2020</p>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 interview">
+                <iframe 
+                    class="d-block w-100"
+                    src="https://www.youtube.com/embed/7eDKUYUb7AE" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    frameborder="0" allowfullscreen>
+                </iframe>           
+                <p>Filme: Por lugares incríveis</p>
+                <p>Diretor: Brett Haley</p>
+                <p>Roteiro: Jennifer Niven &nbsp Estreia: 28/02/2020</p>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 interview">
+                <iframe 
+                    class="d-block w-100"
+                    src="https://www.youtube.com/embed/f-WRJfmuG5U" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    frameborder="0" allowfullscreen>
+                </iframe>           
+                <p>Filme: Coringa</p>
+                <p>Diretor: Todd Phillips</p>
+                <p>Roteiro: Scott Silver &nbsp Estreia: 03/10/2019</p>
+            </div>
+
+            <div class="col-12">
+                
+            </div>
+        </div>  
+
+
+
+
+        <div id="newsId" class="row newsAboutAndEditorial">
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                
+                <div class="row news">
+
+
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                        <img src="Assets/new3.jpg">
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                        <h6>02/10/2020 - Festival De Volta Para o Cinema chega ao Rio de Janeiro</h6>
+                        <p> O Festival De Volta Para o Cinema chegou à capital do Rio de Janeiro.
+                            Cerca de 18 salas estão sendo reabertas ao público carioca desde quinta-feira,
+                            1º de outubro. Isso faz parte do projeto #JuntosPeloCinema, idealizado por Érico Borgo,
+                            em parceria com estúdios, exibidores, produtores e curadores.
+                            <br>
+                            <span class="badge badge-secondary">Filmes</span> 
+                            <span class="badge badge-secondary">Brasil</span>
+                            <span class="badge badge-secondary">Cinema</span>
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                        <img src="Assets/new1.jpg">
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                        <h6> 01/10/2020 - Homem-Aranha 3 pode ter retorno de Jamie Foxx como Electro</h6>
+                        <p> Um dos quatro filmes planejados pela Marvel para 2021, Homem-Aranha 3 promete 
+                            ter uma surpresa para os fãs do herói. Segundo informações do portal The Hollywood Reporter, 
+                            Jamie Foxx está negociando para reprisar o papel do vilão Electro no projeto estrelado por Tom Holland.
+                            <br>
+                            <span class="badge badge-secondary">Filmes</span> 
+                            <span class="badge badge-secondary">Hollywood</span>
+                            <span class="badge badge-secondary">Marvel</span>
+                            
+                        </p>
+                            
+
+                    </div>
+
+
+
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                        <img src="Assets/new2.jpg">
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                        <h6>30/09/2020 - Enola Holmes e outras produções que quebram a quarta parede</h6>
+                        <p> Recentemente estreou na Netflix o longa Enola Holmes, versão um pouco mais
+                             diferente daquilo que já havíamos visto do Sherlock Holmes nas telonas até agora.
+                              Dentre as maiores novidades estão no fato da trama não ser focado exclusivamente 
+                              nele desta vez e também da protagonista vivida por Millie Bobby Brown utilizar bastante
+                               do recurso de "quebra da quarta parede".
+                            <br>   
+                            <span class="badge badge-secondary"> Netflix </span>
+                            <span class="badge badge-secondary"> Filmes </span> 
+                        </p>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 aboutAndEditorial">
+                <h1>Sobre</h1>
+                <p> Este é um site de notícias e curiosidades sobre filmes. Ele foi desenvolvido como um trabalho 
+                    da Disciplina De Desenvolvimento de Interfaces Web - PUC MINAS Praça da Liberdade.
+                    
+                </p>
+
+                <h1>Editorial</h1>  
+                <p> Redação: Gabriel Guimarães Fernandes </p>
+                <p> Pesquisa: Gabriel Guimarães Fernandes </p>
+                <p> Gerente Geral: Gabriel Guimarães Fernandes </p>
+
+                <h1>Redes Sociais</h1>  
+                
+                <a class="SocialNetworkLink" target="_blank" href="https://pt-br.facebook.com/blogloucosporfilmes/"> <i class="fab fa-facebook-square"></i> </a>
+                <a class="SocialNetworkLink" target="_blank" href="https://twitter.com/365filmes"> <i class="fab fa-twitter"></i> </a>
+                <a class="SocialNetworkLink" target="_blank" href="https://www.instagram.com/365filmes/?hl=pt-br"> <i class="fab fa-instagram"></i> </a>
+               
+            </div>
+
+        </div>
+
+
+    </main>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="mainPageJS.js"></script>
+        
+    <footer>
+
+        <div class="container footer">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                    <p> Copyright 2020 - Disciplina de Desenvolvimento de Interfaces Web - Todos os direitos reservados</p>
+                    
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4"> 
+                    <img src="Assets/logo.png">
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+</body>
+
+
+
+
+
+
+</html>

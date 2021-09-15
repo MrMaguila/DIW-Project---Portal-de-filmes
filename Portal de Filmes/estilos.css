@@ -1,0 +1,523 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(51, 51, 53);
+    color: rgb(255, 255, 255);
+}
+
+
+header{
+
+    background-color:  rgb(38, 55, 71);
+    margin: 0;
+    padding: 0;
+    align-content: center;
+}
+
+
+.header
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: rgb(29, 29, 29);
+    margin-bottom: 20px;
+}
+
+.header2
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*  Menu Items */
+
+.menuNav .nav-link
+{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    color:white;
+    padding: 0px;
+}
+
+
+nav .nav-link:hover
+{
+
+    color: #9b9b9b; 
+   
+}
+
+nav .separator
+{
+    margin-top: 20px;
+    margin-left: 0px;
+    color:white !important;
+    /*text-align: center;*/
+    padding: 10px; 
+}
+
+nav .separator2
+{
+    display: none;
+}
+
+
+nav .active 
+{
+    
+    color: #9b9b9b !important; 
+   
+}
+
+.searchTab
+{
+    margin-bottom: 0px;
+    margin-top: 30px;
+    justify-content: right !important;
+    text-align: right !important;
+    left: 500px !important;
+    margin-left: 500px !important;
+}
+
+.menuNav
+{
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff00;
+    color: #ffffff00;
+} 
+
+.menuLogo 
+{   
+    width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.SearchTab
+{   
+    margin-left: 0px;
+    padding: 0px;
+    margin-top: 0px;
+    justify-content: center;
+}
+
+.SearchTab .fas
+{
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+.main2
+{
+    margin-bottom: 20px;
+}
+
+.carousel-item img
+{
+    width: 100%;
+}
+
+.carousel-item
+{
+    width: 100%;
+    background-color: rgb(43, 43, 43);
+}
+
+.carousel-item h1, p
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.carousel-item .filmData iframe
+{
+    justify-content: center;
+    height: 400px;
+}
+
+
+
+
+.carousel-control-prev-icon {
+    
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+
+}
+   
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+
+}
+
+.carousel-control-prev, .carousel-control-next
+{
+    top: 60%;
+    bottom: 20%;
+}
+
+
+
+
+
+.Highlighted
+{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.options option
+{
+    
+    justify-content: center;
+}
+
+.options .custom-select
+{
+    width: 40%;
+    float: right;
+    margin-top: 80px;
+    margin-right: 20%;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+
+.poster img
+{
+    width: 100%;
+    padding: 4px;
+    vertical-align: middle;
+}
+
+.middleDivisor
+{
+    display: none;
+}
+
+.loadButton .col-12 .btn
+{
+    width: 20%;
+    float: right;
+    margin-top: 80px;
+    margin-right: 10%;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.grayBackground
+{
+    background-color:  rgb(207, 207, 207);
+    padding-top: 20px;
+}
+
+.highlighted2 h1
+{
+    display: inline-block;
+    width: 80%;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.interviews
+{
+    background-color:rgb(29, 29, 29);
+}
+
+.interviews .interview
+{
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.loadInterviewsButton
+{
+    width: 20%;
+    float: right;
+    margin-top: 20px;
+    margin-right: 10%;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.interviews div iframe
+{
+    height: 300px;
+
+}
+
+.dropdown .btn { background: rgb(255, 255, 255); color:rgb(0, 0, 0);}
+.dropdown .btn:hover {background: rgb(255, 255, 255); color:rgb(0, 0, 0);}
+.dropdown .btn:active { background: rgb(255, 255, 255); color:rgb(0, 0, 0);}
+.dropdown .btn:focus {background: rgb(255, 255, 255); color:rgb(0, 0, 0);}
+
+
+footer
+{
+    background-color: rgb(29, 29, 29);
+    vertical-align: middle;
+
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    vertical-align: middle;
+}
+
+footer img
+{
+    vertical-align: middle;
+    float: right;
+    width: 40%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.avaliations{
+    justify-content: center;
+}
+
+.avaliation
+{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.avaliation p, h3 
+{
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.fa-smile
+{
+    font-size: 80px;
+}
+
+
+
+.newsAboutAndEditorial
+{
+    margin-top: 50px;
+    text-align: left;
+    padding: 10px;
+}
+
+.news img 
+{
+    width: 100%;
+}
+
+.news p
+{
+    font-size: 12px;
+    padding-bottom: 40px;
+}
+
+
+.badge
+{
+    font-size: 12px;
+}
+
+
+.SocialNetworkLink
+{
+    font-size: 40px;
+    padding:10px;
+    color: #464646;
+}
+
+.SocialNetworkLink:hover
+{
+    font-size: 40px;
+    padding:10px;
+    color: #5a5a5a;
+}
+
+/* =================================================================================== */
+/* Media queries*/
+
+
+
+
+@media screen and (max-width: 1200px)
+{
+    .menuLogo 
+    {   
+        width: 60%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        align-self: center;
+    
+        margin-left: auto;  
+        margin-right: auto;  
+    }
+
+    .menuNav .nav-link
+    {   
+        /*display: block;
+        width: 100%;
+        padding: 0px;
+        text-align: center;*/
+
+        margin-left: 0px;
+        margin-top: 10px;
+        color:white;
+        /*text-align: center;*/
+        font-size: 30px;
+        padding: 0px; 
+        width: 100%;
+        justify-content: center;
+    }
+
+    .menuNav .separator
+    {
+        display: none;
+    }
+
+    
+    nav .separator2
+    {
+        display: block;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        color:white;
+        width: 100%;
+        padding: 10px; 
+    }
+
+    .SearchTab
+    {   
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        justify-content: center;
+    }   
+
+
+    .SearchTab input
+    {
+        height: 50px;
+        font-size: 22pt;
+    }
+
+
+    .carousel-item .filmData iframe
+    {
+        justify-content: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+       /* width: 100%; 
+        height: 300px;*/
+        height: 315px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .carousel-item h1, p
+    {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .options .custom-select
+    {
+        float: right;
+        width: 100%;
+        margin-right: 10px;
+    }
+
+    .middleDivisor
+    {
+        display: inline-block;
+    }
+
+    .avaliations
+    {
+        margin-left: 0;
+        padding-left: 0;
+        float: left;
+    }
+
+    .loadInterviewsButton
+    {
+        width: 50%;
+    }
+
+    footer img
+    {
+        width: 40%;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 992px)
+{
+    .carousel-item .filmData iframe
+    {
+        justify-content: center;
+    }
+
+    .middleDivisor
+    {
+        display: inline-block; 
+    }
+
+    .loadButton .col-12 .btn
+    {
+        width: 40%;
+    }
+
+    footer img
+    {
+        float: none;
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width: 648px)
+{
+    .carousel-item .filmData iframe
+    {
+        justify-content: center;
+       /* width: 100%; 
+        height: 300px;*/
+        height: 300px;
+    }
+
+    .middleDivisor
+    {
+        display: inline-block;
+    }   
+}
